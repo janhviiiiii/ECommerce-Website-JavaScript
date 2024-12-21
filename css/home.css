@@ -202,6 +202,7 @@ hr {
   margin-top: 1rem;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   box-shadow: 0 0 20px 1px;
 }
 
@@ -216,9 +217,11 @@ hr {
 }
 
 .priceContainer {
+  width: inherit;
   margin-top: 1rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #productPrice {
