@@ -1,0 +1,493 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: (6, 6, 18);
+  --headingcolor1: rgba(166, 222, 166, 0.696);
+  --bgcolor1: #efefef;
+}
+
+body {
+  /* background-color: #efefef; */
+  background-color: var(--headingcolor1);
+  overflow-x: hidden;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  /* border: 2px solid black; */
+  background-color: var(--bgcolor1);
+}
+
+.header_container {
+  height: inherit;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 70%;
+  /* background-color: red; */
+}
+
+.left img {
+  height: 5rem;
+  width: 7rem;
+}
+
+.search {
+  height: 39px;
+  width: 75%;
+  /* background-color: rgb(243, 168, 71); */
+  border-radius: 0.3rem;
+  /* border: 1px solid black; */
+  display: flex;
+  /* align-items: center; */
+}
+
+.search input {
+  width: 95%;
+  height: inherit;
+  border: none;
+  outline: none;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  padding-left: 1rem;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+.search_icon {
+  padding-left: 0.4rem;
+  padding-right: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: rgb(243, 168, 71);
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  border-top: 1px solid black;
+  /* border-left: 1px solid black; */
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.right {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.cart,
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  align-self: center;
+}
+
+.cart p,
+.profile p {
+  font-size: 0.7rem;
+}
+
+nav {
+  margin-top: 10px;
+  height: 3rem;
+  background-color: #efefef;
+}
+
+nav ul {
+  height: 3rem;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid;
+}
+
+nav ul li {
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 1px solid;
+  padding: 0.7rem;
+}
+
+#groceriesproducts,
+#mobileproducts,
+#fashionproducts,
+#electronicsproducts,
+#furnitureproducts {
+  width: 12rem;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 200;
+  display: none;
+}
+
+#groceriesproducts ul,
+#mobileproducts ul,
+#fashionproducts ul,
+#electronicsproducts ul,
+#furnitureproducts ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#groceriesproducts ul li,
+#mobileproducts ul li,
+#fashionproducts ul li,
+#electronicsproducts ul li,
+#furnitureproducts ul li {
+  cursor: pointer;
+}
+
+#groceriesproducts {
+  left: 10rem;
+}
+#mobileproducts {
+  left: 27rem;
+}
+#fashionproducts {
+  left: 42.5rem;
+}
+#electronicsproducts {
+  left: 58rem;
+}
+#furnitureproducts {
+  left: 75rem;
+}
+
+hr {
+  background-color: grey;
+  width: 80%;
+  padding: 0.4px;
+  margin: 3px 0;
+}
+
+#cards {
+  height: 24rem;
+  width: 20rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 0 20px 1px;
+}
+
+#cardImg {
+  height: 60%;
+  border-radius: 1rem;
+}
+
+#cards h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.priceContainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#productPrice {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.138);
+  border-radius: 0.4rem;
+}
+
+#productPrice::before {
+  content: "$ ";
+}
+
+#productRating {
+  background-color: rgb(56, 142, 60);
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: bolder;
+}
+
+#productRating::after {
+  content: " ★";
+  font-size: 1.2rem;
+}
+
+/* view more */
+.viewMore{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.3rem;
+}
+
+#viewMoreBtn{
+  padding: 0.6rem;
+  background-color: rgb(114, 80, 149);
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+}
+
+
+/*  */
+
+
+
+
+
+#chatbot_div {
+  position: absolute;
+}
+
+#chatbot {
+  height: 6rem;
+  width: 6rem;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(202, 195, 195, 0.255);
+  /* border: 1px dotted; */
+  /* display: none; */
+  /* padding: -4rem; */
+}
+
+#chatbotMsgBox {
+  height: 400px;
+  width: 50%;
+  /* border: 1px solid black; */
+  background-color: beige;
+  position: fixed;
+  top: 10rem;
+  left: 25%;
+  z-index: 2000;
+  border-radius: 0.8rem;
+  display: none;
+}
+
+#chatbotMsgBox .up {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(30, 29, 29);
+  color: white;
+  display: flex;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+#chatbotMsgBox .up .left1 {
+  width: 95%;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+#chatbotMsgBox .up .left1 img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+#chatbotMsgBox .up .left1 p {
+  margin-top: 1rem;
+}
+
+#chatbotMsgBox .up .right1 {
+  width: 5%;
+  display: flex;
+  justify-content: end;
+  padding: 0.7rem;
+  background-color: #fff;
+  color: red;
+  border-bottom-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+#chatbotMsgBox .center {
+  height: 80%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow:scroll;
+}
+
+#chatbotMsgBox .center p {
+  align-self: flex-start;
+  background-color: rgb(218, 221, 224);
+  padding: 0.5rem;
+  margin: 10px;
+  border-radius: 0.3rem 0.3rem 0.3rem 0;
+  color:black;
+}
+
+#chatbotMsgBox .center span {
+  align-self: flex-end;
+  background-color: rgb(102, 173, 236);
+  padding: 0.5rem;
+  margin: 10px;
+  border-radius: 0.3rem 0.3rem 0rem 0.3rem;
+  color:black;
+}
+
+#chatbotMsgBox .down {
+  height: 10%;
+  width: 100%;
+  background-color: green;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+}
+
+#chatbotMsgBox .down input{
+  height: 70%;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 1rem 1rem;
+}
+
+#chatbotMsgBox .down i{
+  padding: 0.6rem;
+  width: 4rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  display: flex;
+  /* font-size: 1.2rem; */
+  justify-content: center;
+}
+
+
+.card {
+  margin: 0 auto;
+  box-sizing: border-box; /* Ensures consistent box size */
+}
+
+
+/* footer start */
+
+.main_container {
+  display: flex;
+  align-items: flex-end;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.row {
+  justify-content: space-around;
+  margin: 0;
+}
+
+ul.list-unstyled {
+  padding: 0;
+  margin: 0;
+}
+
+ul.list-unstyled li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.list-unstyled li a:hover {
+  color: #ddd;
+}
+
+img {
+  width: 10rem;
+}
+
+.icon_row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon_row i {
+  background-color: rgb(0, 122, 205);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main_container {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #000; /* Ensures the footer background covers the full width */
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  color: #ddd;
+  padding-top: 1rem;
+}
+
+.icon_row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/* footer end */

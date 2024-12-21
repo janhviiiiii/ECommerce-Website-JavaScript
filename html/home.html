@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="../css/home.css" rel="stylesheet" />
+
+    <title>HOME PAGE</title>
+    <link rel="icon" href="../assets/website_logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <div class="left">
+          <img src="../assets/website_logo.png" alt="logo" />
+
+          <div class="search">
+            <input type="text" placeholder="Search..." />
+            <div class="search_icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Cart</p>
+          </div>
+          <div class="profile">
+            <i class="fa-regular fa-user"></i>
+            <p>Profile</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- nav start -->
+    <nav>
+      <ul>
+        <a><li id="groceries">Groceries</li></a>
+        <a><li id="mobile">Mobile</li></a>
+        <a><li id="fashion">Fashion</li></a>
+        <a><li id="electronics">Electronics</li></a>
+        <a><li id="furniture">Furniture</li></a>
+      </ul>
+    </nav>
+    <!-- nav end -->
+    <!-- groceries list start-->
+    <div id="groceriesproducts">
+      <ul>
+        <li>Fresh Vegetables</li>
+        <hr />
+        <li>Fruits</li>
+        <hr />
+        <li>Milk & Dairy</li>
+        <hr />
+        <li>Cooking Oil</li>
+        <hr />
+        <li>Beverages</li>
+      </ul>
+    </div>
+    <!-- groceries list end-->
+
+    <!-- mobile list start-->
+    <div id="mobileproducts">
+      <ul>
+        <li>iPhone 14</li>
+        <hr />
+        <li>Samsung Galaxy S21</li>
+        <hr />
+        <li>Xiomi Mi 11</li>
+        <hr />
+        <li>OnePlus 9 Pro</li>
+        <hr />
+        <li>Google Pixel 6</li>
+      </ul>
+    </div>
+    <!-- mobile list end-->
+
+    <!-- fashion list start-->
+    <div id="fashionproducts">
+      <ul>
+        <li>Classic T-Shirts</li>
+        <hr />
+        <li>Denim Jeans</li>
+        <hr />
+        <li>Jackets</li>
+        <hr />
+        <li>Stylish Shoes</li>
+        <hr />
+        <li>Watches</li>
+      </ul>
+    </div>
+    <!-- fashion list end-->
+
+    <!-- electronics list start-->
+    <div id="electronicsproducts">
+      <ul>
+        <li>Smartphone</li>
+        <hr />
+        <li>Laptop</li>
+        <hr />
+        <li>Camera</li>
+        <hr />
+        <li>Smartwatch</li>
+        <hr />
+        <li>Bluetooth Speaker</li>
+      </ul>
+    </div>
+    <!-- electronics list end-->
+
+    <!-- furniture list start-->
+    <div id="furnitureproducts">
+      <ul>
+        <li>Wooden Chair</li>
+        <hr />
+        <li>Dining Table</li>
+        <hr />
+        <li>Sofa Set</li>
+        <hr />
+        <li>Bed Frame</li>
+        <hr />
+        <li>Bookshelf</li>
+      </ul>
+    </div>
+    <!-- furniture list end-->
+
+    <!-- carousel start -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/3db48f3341053283.jpg?q=20"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/fede1719ccaa5a58.jpg?q=20"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7ba5649b8d3f6f1a.jpg?q=20"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel end -->
+
+    <!-- main section start -->
+    <main id="productContainer">
+      <!-- container start -->
+      <div class="container">
+        <!-- row start -->
+        <div
+          class="row d-flex justify-content-center"
+          id="cardContainer"
+        ></div>
+        <!-- row end -->
+      </div>
+      <!-- container end -->
+    </main>
+    <!-- main section end -->
+
+
+    <!-- chatbot start -->
+    <div class="chatbot_section">
+      <div id="chatbot_div">
+        <img src="../assets/chatbot.png" id="chatbot">
+      </div>
+    </div>
+    <!-- chatbot end -->
+
+    <!-- chatbox msg box start -->
+     <div id="chatbotMsgBox">
+      <div class="up">
+        <div class="left1">
+          <img src="data:image/png;base64,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" alt="profile_icon">
+          <p>Jonny Vai</p>
+        </div>
+        <div class="right1" id="delete_icon">
+          <i class="fa-solid fa-x" ></i>
+        </div>
+
+      </div>
+      <div class="center" id="msgBox">
+        <p>Hi</p>
+        <span>Hello</span>
+      </div>
+      <div class="down">
+        <input type="text" id="un" placeholder="Enter message....">
+        <!-- <button id="send">Send</button> -->
+        <i class="fa-solid fa-paper-plane" id="send"></i>
+      </div>
+
+     </div>
+    <!-- chatbox msg box end -->
+
+
+
+<!-- footer start -->
+    <div class="container-fluid main_container">
+      <footer class="bg-dark text-white" id="footer_section">
+        <div class="row mx-0">
+          <!-- Column 1 -->
+          <div
+            class="col-12 d-flex flex-column align-items-center col-md-6 col-lg-3 mb-3"
+          >
+            <img
+              src="../assets/website_logo.png"
+            />
+            <div class="icon_row">
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>37, Ayur Vigyan Nagar, New Delhi, India.</p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <h4>Get to know us</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Gift a smile</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-6 col-md-6 col-lg-3 mb-3">
+            <h4>Contact With Us</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <h4>Let Us Help You</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">100% Purchase Protection</a></li>
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Return Centre</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+
+          <hr />
+          <div class="copy">
+            <p>&copy; 2024 by Janhvi, Created with Bootstrap.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+<!-- footer end -->
+
+    <script src="../js/home.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
