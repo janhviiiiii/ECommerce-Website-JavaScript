@@ -95,6 +95,10 @@ input::placeholder {
   gap: 20px;
   height: 100%;
   padding-top: 1rem;
+  
+}
+.right .cart{
+  cursor: pointer;
 }
 
 .cart,
